@@ -1,0 +1,266 @@
+:root {
+    --color-gray: gray;
+    --color-gold: goldenrod;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+article {
+    width: 860px;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 860px;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    overflow: scroll;
+
+}
+
+#galeria img {
+    width: 100%;
+}
+
+#galeria-transition {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    max-width: 16rem; 
+}
+
+.form-item-checkbox {
+    gap: 1rem;
+}
+
+.form-item input {
+    padding: 0.5rem 1em;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray
+}
+
+.form-item select {
+    padding: 0.5rem 1em;
+    border-radius: 0.5rem;
+    border: 1px solid lightgray
+}
+
+.form-item input[type='checkbox'] {
+    transform: scale(1.5);
+    accent-color: goldenrod;
+    margin-right: 0.5rem;
+}
+
+.body-grid-old {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "header header"
+        "navigation main"
+        "footer footer";
+
+    grid-template-columns: 14rem 1fr;
+    grid-template-rows: 6rem 1fr 3rem;
+
+    box-shadow: 0 0 5px 0 black;
+}
+
+.body-grid {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+        "header"
+        "navigation"
+        "main"
+        "footer";
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem auto 1fr 3rem;
+}
+
+#presupuesto-form {
+    box-shadow: 0 0 4px 0 gray;
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+    display: flex;   
+     flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem
+}
+
+#presupuesto-form fieldset {
+    border:none;
+    flex: 1;
+}
+
+#presupuesto-form legend {
+    margin-bottom: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+
+.header {
+    grid-area: header;
+    width: 100%;
+    background-color: #ebebea;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    font-size:30px;
+
+}
+
+.navigation-old {
+    grid-area: navigation;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.navigation {
+    grid-area: navigation;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation-button {
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-gray);
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-decoration: none
+}
+
+.navigation-button:hover {
+    background-color: var(--color-gray);
+    color: white;
+}
+
+.button-form {
+    width: 170px;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-gray);
+}
+
+
+.button-form:hover {
+    background-color: var(--color-gold);
+    color: white
+}
+
+.button-active{
+    background-color: goldenrod;
+    color: white;
+}
+
+
+.header-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.main {
+    grid-area: main;
+    overflow: scroll;
+    justify-content: center;
+    display: flex;
+    padding: 0 100px;
+}
+
+#galeria::-webkit-scrollbar,
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.galery-main {
+    padding-top: 200px;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.footer {
+    background-color: #ebebea;
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: footer;
+    align-items: center;
+    padding: 7px
+}
+
+.gallery-container {
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#current-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.galeria-transition {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.galeria-transition:hover {
+    transform: scale(1.3);
+}

@@ -1,0 +1,28 @@
+[{
+    "nombre": "imagen1",
+    "url": "../images/imagen1.jpg"
+},{
+    "nombre": "imagen2",
+    "url": "../images/imagen2.jpg"
+},{
+    "nombre": "imagen3",
+    "url": "../images/imagen3.jpg"
+},{
+    "nombre": "imagen4",
+    "url": "../images/imagen4.jpg"
+},{
+    "nombre": "imagen5",
+    "url": "../images/imagen5.jpg"
+},{
+    "nombre": "imagen6",
+    "url": "../images/imagen6.jpg"
+},{
+    "nombre": "imagen7",
+    "url": "../images/imagen7.jpg"
+},{
+    "nombre": "imagen8",
+    "url": "../images/imagen8.jpg"
+},{
+    "nombre": "imagen9",
+    "url": "../images/imagen9.jpg"
+}]
